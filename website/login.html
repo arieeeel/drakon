@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="assets/css/stylesss.css">
+
+    <link rel="icon" href="assets/img/drakon.svg" type="image/x-icon">
+
+    <title>Iniciar Sesion | Drakon!</title>
+
+</head>
+<body>
+        <div class="row no-gutters bg-dark">
+            <div class="col-lg-5 register-bg-login">
+            </div>
+            <div class="col-lg-7">
+                <div class="container-log aling-self-center p-6">
+                    <h1 class="font-weight-bold-login text-center mb-3">COMIENZA TU AVENTURA GAMER!</h1>
+
+                    <p class="text-muted text-center mb-3">Ingresa tus datos y continua tu aventura gamer</p>
+
+                    <form action="" class="login" id="login">
+                        <!--Grupo Correo-->
+                        <div class="form-group formulario__grupo md-6" id="grupo__correo">
+                            <label for="correo" class="font-weight-bold-login formulario__label text-light">Correo electrónico <span class="text-danger">*</span></label>
+                            <div class="formulario__grupo-input">
+                                <input type="email" class="form-control formulario__input bg-black" name="correo" id="correo" placeholder="Ingresa tu correo...">
+                                <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                            </div>
+                            <p class="formulario__input-error">El correo electronico no cumple con los requisitos (letras, números, - _ .).</p>                           
+                        </div>
+                         
+                        <!--Grupo Contraseña-->
+                        <div class="form-group formulario__grupo md-6" id="grupo__password">
+                            <label for="password" class="font-weight-bold-login formulario__label text-light">Contraseña<span class="text-danger">*</span></label>
+                            <div class="formulario__grupo-input">
+                                <input type="password" class="form-control formulario__input bg-black" name="password" id="password" placeholder="Ingresa tu contraseña...">
+                                <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                            </div>
+                            <p class="formulario__input-error">La contraseña debe ser de 8 a 12 digitos y contener solo letras y números.</p>                           
+                        </div>
+
+                        <!--Grupo Repetir Contraseña-->
+                        <div class="form-group formulario__grupo md-6" id="grupo__password2">
+                            <label for="password2" class="font-weight-bold-login formulario__label text-light">Repetir Contraseña<span class="text-danger">*</span></label>
+                            <div class="formulario__grupo-input">
+                                <input type="password" class="form-control formulario__input bg-black" name="password2" id="password2"placeholder="Ingresa tu contraseña...">
+                                <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                            </div>
+                            <p class="formulario__input-error">La contraseñas no coinciden.</p>                           
+                        </div>
+
+                        <!--Grupo Terminos y Condiciones-->
+
+                        <div class="formulario__mensaje" id="formulario__mensaje">
+                            <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error:</b> Por favor rellene el formulario correctamente.</p>
+                        </div>
+
+                        <div class="formulario__grupo formulario__grupo-btn-enviar">
+                            <button type="submit" class="formulario__btn">Ingresar</button>
+                            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Cuenta ingresada correctamente</p>
+                        </div>
+
+                    </form>
+
+                    <p class="text-muted text-center">Si aún no eres parte de nosotros, <b><a class="link-reg" href="registro.html">regístrate</a> </b>y comienza tu aventura en el mundo de los videojuegos.</p>
+
+                    <p class="copyright-text1 text-muted">Copyright © 2022 Todos los derechos reservados.
+                        <a href="index.html"><span class="logo">Drakon!</span></a>
+                    </p>
+
+                     <!--INTENTO LINKS-->
+                    <main>
+                        <div class="icon" id="link-click" onclick="location.href='http://www.instagram.com';" target="blank" style="cursor:pointer">
+                            <svg heigth="80" width="80"></svg>
+                            <i class='bx bxl-instagram'></i>
+                        </div>
+                
+                        <div class="icon" id="link-click" onclick="location.href='http://www.facebook.com';" style="cursor:pointer">
+                            <svg heigth="80" width="80"></svg>
+                            <i class='bx bxl-facebook-circle'></i>
+                        </div>
+                
+                        <div class="icon" id="link-click" onclick="location.href='http://www.twitch.com';" target="blank" style="cursor:pointer">
+                            <svg heigth="80" width="80"></svg>
+                            <i class='bx bxl-twitch' ></i>
+                        </div>
+                
+                        <div class="icon" id="link-click" onclick="location.href='http://www.twitter.com';" style="cursor:pointer">
+                            <svg heigth="80" width="80"></svg>
+                            <i class='bx bxl-twitter' ></i>
+                        </div>
+                        
+                    </main>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+
+ <!-- Script propios -->
+ <script src="assets/js/login.js"></script>
+</html>
